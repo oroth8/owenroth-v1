@@ -9,12 +9,8 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
-  TwitterIcon,
+  UnsplashIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -312,6 +308,11 @@ export default async function Home() {
               href="https://www.linkedin.com/in/owen-roth-86ba1ba4"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+            />
+             <SocialLink
+              href="https://unsplash.com/@oroth8"
+              aria-label="Follow on Unsplash"
+              icon={UnsplashIcon}
             />
           </div>
         </div>
