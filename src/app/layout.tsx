@@ -7,12 +7,12 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Spencer Sharp',
+    template: '%s - Owen Roth',
     default:
-      'Spencer Sharp - Software designer, founder, and amateur astronaut',
+      'Owen Roth -  Software Developer, Fitness Enthusiast, and Navy Veteran.',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'I’m Owen, a software developer based in Chicago, IL. I specialize in building full stack web applications with Ruby and Javascript frameworks. Outside of tech, I frequently train for marathons, strength train, ski, travel, and take pictures.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
