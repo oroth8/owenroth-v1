@@ -60,20 +60,21 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'I’ve worked on tons of projects over the years but these are the ones that I’m most proud of. I have worked on things ranging from small API gems to massive SaaS applications. These are the ones that I have spent the most time on and have had the most impact on my career.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Things I have built and contributed to over the years."
+      intro="I’ve worked on tons of projects over the years but these are the ones that I’m most proud of. I have worked on things ranging from small API gems to massive SaaS applications. These are the ones that I have spent the most time on and have had the most impact on my career."
     >
       <ul
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {projects.map((project) => (
+        <p>Coming Soon!</p>
+        {/* {projects.map((project) => (
           <Card as="li" key={project.name}>
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
@@ -92,7 +93,7 @@ export default function Projects() {
               <span className="ml-2">{project.link.label}</span>
             </p>
           </Card>
-        ))}
+        ))} */}
       </ul>
     </SimpleLayout>
   )

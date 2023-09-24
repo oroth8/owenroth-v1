@@ -9,7 +9,7 @@ import {
   InstagramIcon,
   LinkedInIcon,
   // TwitterIcon,
-  UnsplashIcon
+  UnsplashIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
@@ -70,11 +70,22 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Owen Roth. Happily dedicated to all things tech and an active lifestyle.
+            I’m Owen Roth. Happily dedicated to all things tech and an active
+            lifestyle.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            Born and raised in the bustling heart of Chicago, my story has been one of passion, dedication, and continuous evolution. As a proud alumnus of New Trier High School, my early years were characterized by a deep involvement in sports. Lacrosse became my game of choice, and as a Long Stick Midfielder, I carried my prowess to DePauw University. However, the call of a bigger stage led me to transfer to Wisconsin Madison, where I not only continued my lacrosse journey but also made a significant mark. Competing at the club level, I contributed to the team clinching several Big 10 championships and took on the role of the defensive captain, leading from the front.
+              Born and raised in the bustling heart of Chicago, my story has
+              been one of passion, dedication, and continuous evolution. As a
+              proud alumnus of New Trier High School, my early years were
+              characterized by a deep involvement in sports. Lacrosse became my
+              game of choice, and as a Long Stick Midfielder, I carried my
+              prowess to DePauw University. However, the call of a bigger stage
+              led me to transfer to Wisconsin Madison, where I not only
+              continued my lacrosse journey but also made a significant mark.
+              Competing at the club level, I contributed to the team clinching
+              several Big 10 championships and took on the role of the defensive
+              captain, leading from the front.
             </p>
             <p>
               The only thing I loved more than computers as a kid was space.
@@ -84,16 +95,46 @@ export default function About() {
               with just a bit of momentum I’d be able to get to orbit.
             </p>
             <p>
-            College also marked a pivotal moment in my personal journey. In my senior year, inspired by tales of valor and dedication, I decided to pursue the challenging path of becoming a Navy SEAL. Post-graduation, I immersed myself in training, working part-time in the restaurant sector, donning multiple hats from bartending to general management. In 2018, I took the plunge, enlisting in the Navy. My commitment and resilience took me through basic training and the demanding courses of BUD/s Prep school. While I reached the second phase of BUD/S, a setback saw me part ways with my Navy dream.
+              College also marked a pivotal moment in my personal journey. In my
+              senior year, inspired by tales of valor and dedication, I decided
+              to pursue the challenging path of becoming a Navy SEAL.
+              Post-graduation, I immersed myself in training, working part-time
+              in the restaurant sector, donning multiple hats from bartending to
+              general management. In 2018, I took the plunge, enlisting in the
+              Navy. My commitment and resilience took me through basic training
+              and the demanding courses of BUD/s Prep school. While I reached
+              the second phase of BUD/S, a setback saw me part ways with my Navy
+              dream.
             </p>
             <p>
-            Life, however, had a different plan in store. Leveraging my analytical mindset and fascination for technology, I took the tech plunge at Northwestern University's web development bootcamp. This foray into the digital realm opened up the world of web development, and soon, I was freelancing, creating digital solutions for various clients. My skills landed me a role at Workforce.com in 2021 as a junior software developer. But the journey didn't stop there. I transitioned to Launchpad Lab, where I currently contribute as a software developer, specializing in Ruby and JavaScript frameworks. While my professional life orbits around backend development and full-stack applications, my personal time has a diverse spread.
+              Life, however, had a different plan in store. Leveraging my
+              analytical mindset and fascination for technology, I took the tech
+              plunge at Northwestern University's web development bootcamp. This
+              foray into the digital realm opened up the world of web
+              development, and soon, I was freelancing, creating digital
+              solutions for various clients. My skills landed me a role at
+              Workforce.com in 2021 as a junior software developer. But the
+              journey didn't stop there. I transitioned to Launchpad Lab, where
+              I currently contribute as a software developer, specializing in
+              Ruby and JavaScript frameworks. While my professional life orbits
+              around backend development and full-stack applications, my
+              personal time has a diverse spread.
             </p>
             <p>
-            Fitness remains a constant anchor. From running marathons to building a personalized strength training gym on my Chicago rooftop, the adrenaline rush keeps me going. Winters often find me carving through the snowy slopes in Steamboat, Colorado, with an ambition of clocking in around 30 ski days annually. And when the world slows down a bit, I find solace in photography. The vibrant cityscapes of Chicago and the serene landscapes beyond offer a canvas that I cherish capturing through my lens.
+              Fitness remains a constant anchor. From running marathons to
+              building a personalized strength training gym on my Chicago
+              rooftop, the adrenaline rush keeps me going. Winters often find me
+              carving through the snowy slopes in Steamboat, Colorado, with an
+              ambition of clocking in around 30 ski days annually. And when the
+              world slows down a bit, I find solace in photography. The vibrant
+              cityscapes of Chicago and the serene landscapes beyond offer a
+              canvas that I cherish capturing through my lens.
             </p>
             <p>
-            In essence, every twist and turn, every challenge faced, and every skill acquired has shaped me into who I am today: a dedicated software developer, a former athlete, a Navy veteran, and a hobby photographer with an undying spirit to learn and evolve.
+              In essence, every twist and turn, every challenge faced, and every
+              skill acquired has shaped me into who I am today: a dedicated
+              software developer, a former athlete, a Navy veteran, and a hobby
+              photographer with an undying spirit to learn and evolve.
             </p>
           </div>
         </div>
@@ -102,16 +143,28 @@ export default function About() {
             {/* <SocialLink href="#" icon={TwitterIcon}>
               Follow on Twitter
             </SocialLink> */}
-            <SocialLink href="https://www.instagram.com/owen.roth.v1" icon={InstagramIcon} className="mt-4">
+            <SocialLink
+              href="https://www.instagram.com/owen.roth.v1"
+              icon={InstagramIcon}
+              className="mt-4"
+            >
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="https://github.com/oroth8" icon={GitHubIcon} className="mt-4">
+            <SocialLink
+              href="https://github.com/oroth8"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="https://www.linkedin.com/in/owen-roth-86ba1ba4" icon={LinkedInIcon} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/owen-roth-86ba1ba4"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
-             <SocialLink
+            <SocialLink
               href="https://unsplash.com/@oroth8"
               icon={UnsplashIcon}
               className="mt-4"
