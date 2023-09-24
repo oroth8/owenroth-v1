@@ -20,6 +20,10 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
+import lplLogo from '@/images/logos/lpl.jpeg'
+import wfLogo from '@/images/logos/workforce.jpeg'
+import navyLogo from '@/images/logos/navy.png'
+import wiscLogo from '@/images/logos/wisc.png'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -187,35 +191,42 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Launchpad Lab',
+      title: 'Software Developer II',
+      logo: lplLogo,
+      start: '2023',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'Launchpad Lab',
+      title: 'Software Developer I',
+      logo: lplLogo,
+      start: '2022',
+      end: '2023',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'Workforce.com (Tanda.co)',
+      title: 'Junior Software Developer',
+      logo: wfLogo,
+      start: '2021',
+      end: '2022',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'United States Navy',
+      title: 'Seaman / Navy SEAL BUD/S Student (Post Hellweek)',
+      logo: navyLogo,
+      start: '2018',
+      end: '2020',
+    },
+    {
+      company: 'University of Wisconsin - Madison',
+      title: 'Student (Economics & Math Minor)',
+      logo: wiscLogo,
+      start: '2013',
+      end: '2017',
     },
   ]
 
