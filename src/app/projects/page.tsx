@@ -3,47 +3,47 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoGem from '@/images/logos/gem.png'
+import logoMr from '@/images/logos/mr.png'
+import logoBb from '@/images/logos/bb.png'
+import logoWf from '@/images/logos/wf.png'
+import logoSo from '@/images/logos/so.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'EasyHubspot Gem',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'A gem I built from the ground up that provides an easier way to integrate with the Hubspot API',
+    link: { href: 'https://github.com/oroth8/easy_hubspot', label: 'github.com/oroth8/easy_hubspot' },
+    logo: logoGem,
   },
   {
-    name: 'Animaginary',
+    name: 'Magellan Rewards Web/Android/iOS App',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Another project I build from the ground up that provides a rewards and admin interface for the Magellan Rewards program.',
+    link: { href: 'https://www.magellan-rewards.com/', label: 'magellan-rewards.com' },
+    logo: logoMr,
   },
   {
-    name: 'HelioStream',
+    name: 'BellaBaby Photography',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'A massive project I helped contributed significantly too that provides a platform for BellaBaby photographers to upload and manage their photos. Process 100k photos a day.',
+    link: { href: 'https://www.bellababyphotography.com/', label: 'bellababyphotography.com' },
+    logo: logoBb,
   },
   {
-    name: 'cosmOS',
+    name: 'Workforce.com',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+      'A SaaS product I helped contributed to that provides a platform for companies to manage their workforce.',
+    link: { href: 'https://workforce.com/', label: 'workforce.com' },
+    logo: logoWf,
   },
   {
-    name: 'OpenShuttle',
+    name: 'My Wedding Website',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'A website I built that integrates with a custom API I also built to manage RSVPs and other wedding related things.',
+    link: { href: 'https://www.sabrina-owen-wedding.com/', label: 'sabrina-owen-wedding.com' },
+    logo: logoSo,
   },
 ]
 
@@ -73,8 +73,7 @@ export default function Projects() {
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
       >
-        <p>Coming Soon!</p>
-        {/* {projects.map((project) => (
+        {projects.map((project) => (
           <Card as="li" key={project.name}>
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
@@ -93,7 +92,7 @@ export default function Projects() {
               <span className="ml-2">{project.link.label}</span>
             </p>
           </Card>
-        ))} */}
+        ))}
       </ul>
     </SimpleLayout>
   )
