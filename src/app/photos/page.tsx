@@ -15,60 +15,58 @@ import image7 from '@/images/photos/kyoto-4.jpg'
 import image8 from '@/images/photos/suicide-forest.jpg'
 import image9 from '@/images/photos/tokoyo.jpg'
 import image10 from '@/images/photos/zion.jpg'
-import image11 from  '@/images/photos/zion-1.jpg'
-
+import image11 from '@/images/photos/zion-1.jpg'
 
 type File = {
-  title: string;
-  source: StaticImageData;  // This would be the type of image1, which in most cases might be a string or any other suitable type.
-};
+  title: string
+  source: StaticImageData // This would be the type of image1, which in most cases might be a string or any other suitable type.
+}
 
 const files: File[] = [
-{
-title: "Chicago River BW",
-source: image1
-},
-{
-  title: "Chicago St. Regis BW",
-  source: image2
+  {
+    title: 'Chicago River BW',
+    source: image1,
   },
   {
-    title: "Hakone Shrine",
-    source: image3
-    },
-    {
-      title: "Kyoto Bamboo Forrest",
-      source: image4
-      },
-      {
-        title: "Kyoto Gold Temple",
-        source: image5
-        },
-        {
-          title: "Kyoto Rainy Night",
-          source: image6
-          },
-          {
-            title: "Kyoto Night Street",
-            source: image7
-            },
-            {
-              title: "Suicide Forrest",
-              source: image8
-              },
-              {
-                title: "Tokyo",
-                source: image9
-                },
-                {
-                  title: "Zion Rock Run",
-                  source: image10
-                  },
-                  {
-                    title: "Zion",
-                    source: image11
-                    },
-
+    title: 'Chicago St. Regis BW',
+    source: image2,
+  },
+  {
+    title: 'Hakone Shrine',
+    source: image3,
+  },
+  {
+    title: 'Kyoto Bamboo Forrest',
+    source: image4,
+  },
+  {
+    title: 'Kyoto Gold Temple',
+    source: image5,
+  },
+  {
+    title: 'Kyoto Rainy Night',
+    source: image6,
+  },
+  {
+    title: 'Kyoto Night Street',
+    source: image7,
+  },
+  {
+    title: 'Suicide Forrest',
+    source: image8,
+  },
+  {
+    title: 'Tokyo',
+    source: image9,
+  },
+  {
+    title: 'Zion Rock Run',
+    source: image10,
+  },
+  {
+    title: 'Zion',
+    source: image11,
+  },
 ]
 
 function PhotosSection({
@@ -77,10 +75,12 @@ function PhotosSection({
 }: React.ComponentPropsWithoutRef<typeof Section>) {
   return (
     <Section {...props}>
-       <ul
-      role="list"
-      className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
-    >{children}</ul>
+      <ul
+        role="list"
+        className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+      >
+        {children}
+      </ul>
     </Section>
   )
 }
@@ -90,7 +90,7 @@ function PhotoGrid({}: React.ComponentPropsWithoutRef<'div'>) {
     <>
       {files.map((file) => (
         <li key={file.title} className="relative">
-          <div className="aspect-h-7 aspect-w-10 group block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:bg-gray-300 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+          <div className="aspect-h-7 aspect-w-10 group block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:bg-gray-300 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
             <img
               src={file.source.src}
               alt={file.title}
@@ -111,9 +111,8 @@ function PhotoGrid({}: React.ComponentPropsWithoutRef<'div'>) {
           </p> */}
         </li>
       ))}
-        </>
+    </>
   )
-
 }
 
 export const metadata: Metadata = {

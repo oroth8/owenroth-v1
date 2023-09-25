@@ -14,21 +14,30 @@ const projects = [
     name: 'EasyHubspot Gem',
     description:
       'A gem I built from the ground up that provides an easier way to integrate with the Hubspot API',
-    link: { href: 'https://github.com/oroth8/easy_hubspot', label: 'github.com/oroth8/easy_hubspot' },
+    link: {
+      href: 'https://github.com/oroth8/easy_hubspot',
+      label: 'github.com/oroth8/easy_hubspot',
+    },
     logo: logoGem,
   },
   {
     name: 'Magellan Rewards Web/Android/iOS App',
     description:
       'Another project I build from the ground up that provides a rewards and admin interface for the Magellan Rewards program.',
-    link: { href: 'https://www.magellan-rewards.com/', label: 'magellan-rewards.com' },
+    link: {
+      href: 'https://www.magellan-rewards.com/',
+      label: 'magellan-rewards.com',
+    },
     logo: logoMr,
   },
   {
     name: 'BellaBaby Photography',
     description:
       'A massive project I helped contributed significantly too that provides a platform for BellaBaby photographers to upload and manage their photos. Process 100k photos a day.',
-    link: { href: 'https://www.bellababyphotography.com/', label: 'bellababyphotography.com' },
+    link: {
+      href: 'https://www.bellababyphotography.com/',
+      label: 'bellababyphotography.com',
+    },
     logo: logoBb,
   },
   {
@@ -42,7 +51,10 @@ const projects = [
     name: 'My Wedding Website',
     description:
       'A website I built that integrates with a custom API I also built to manage RSVPs and other wedding related things.',
-    link: { href: 'https://www.sabrina-owen-wedding.com/', label: 'sabrina-owen-wedding.com' },
+    link: {
+      href: 'https://www.sabrina-owen-wedding.com/',
+      label: 'sabrina-owen-wedding.com',
+    },
     logo: logoSo,
   },
 ]
@@ -60,7 +72,8 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'I’ve worked on tons of projects over the years but these are the ones that I’m most proud of. I have worked on things ranging from small API gems to massive SaaS applications. These are the ones that I have spent the most time on and have had the most impact on my career.',
+  description:
+    'I’ve worked on tons of projects over the years but these are the ones that I’m most proud of. I have worked on things ranging from small API gems to massive SaaS applications. These are the ones that I have spent the most time on and have had the most impact on my career.',
 }
 
 export default function Projects() {

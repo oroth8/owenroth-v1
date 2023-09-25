@@ -237,7 +237,12 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="/static/OWEN_ROTH_RESUME.pdf" download variant="secondary" className="group mt-6 w-full">
+      <Button
+        href="/static/OWEN_ROTH_RESUME.pdf"
+        download
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -283,11 +288,18 @@ export default async function Home() {
             Software Developer, Fitness Enthusiast, and Navy Veteran.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Hello! I'm Owen Roth, a software developer with expertise in Ruby and various JavaScript frameworks. My forte lies in backend development as I craft intricate full-stack applications that deliver seamless user experiences. 
-          <br/>
-          <br/>
-          Beyond the digital realm, I'm passionate about fitness, indulging in both running and strength training, and sometimes I moonlight as a photographer, capturing landscapes. Today, I'm channeling my skills and passion at Launchpad Lab, where we're at the forefront of creating innovative software solutions for a myriad of challenges.
-          </p> 
+            Hello! I'm Owen Roth, a software developer with expertise in Ruby
+            and various JavaScript frameworks. My forte lies in backend
+            development as I craft intricate full-stack applications that
+            deliver seamless user experiences.
+            <br />
+            <br />
+            Beyond the digital realm, I'm passionate about fitness, indulging in
+            both running and strength training, and sometimes I moonlight as a
+            photographer, capturing landscapes. Today, I'm channeling my skills
+            and passion at Launchpad Lab, where we're at the forefront of
+            creating innovative software solutions for a myriad of challenges.
+          </p>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink
               href="https://twitter.com"
@@ -309,7 +321,7 @@ export default async function Home() {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
-             <SocialLink
+            <SocialLink
               href="https://unsplash.com/@oroth8"
               aria-label="Follow on Unsplash"
               icon={UnsplashIcon}
