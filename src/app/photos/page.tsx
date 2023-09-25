@@ -3,96 +3,133 @@ import { type Metadata } from 'next'
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { StaticImageData } from 'next/image'
 
-function SpeakingSection({
+import image1 from '@/images/photos/chicago-bw-2.jpg'
+import image2 from '@/images/photos/chicago-bw.jpg'
+import image3 from '@/images/photos/hakone.jpg'
+import image4 from '@/images/photos/kyoto-1.jpg'
+import image5 from '@/images/photos/kyoto-2.jpg'
+import image6 from '@/images/photos/kyoto-3.jpg'
+import image7 from '@/images/photos/kyoto-4.jpg'
+import image8 from '@/images/photos/suicide-forest.jpg'
+import image9 from '@/images/photos/tokoyo.jpg'
+import image10 from '@/images/photos/zion.jpg'
+import image11 from  '@/images/photos/zion-1.jpg'
+
+
+type File = {
+  title: string;
+  source: StaticImageData;  // This would be the type of image1, which in most cases might be a string or any other suitable type.
+};
+
+const files: File[] = [
+{
+title: "Chicago River BW",
+source: image1
+},
+{
+  title: "Chicago St. Regis BW",
+  source: image2
+  },
+  {
+    title: "Hakone Shrine",
+    source: image3
+    },
+    {
+      title: "Kyoto Bamboo Forrest",
+      source: image4
+      },
+      {
+        title: "Kyoto Gold Temple",
+        source: image5
+        },
+        {
+          title: "Kyoto Rainy Night",
+          source: image6
+          },
+          {
+            title: "Kyoto Night Street",
+            source: image7
+            },
+            {
+              title: "Suicide Forrest",
+              source: image8
+              },
+              {
+                title: "Tokyo",
+                source: image9
+                },
+                {
+                  title: "Zion Rock Run",
+                  source: image10
+                  },
+                  {
+                    title: "Zion",
+                    source: image11
+                    },
+
+]
+
+function PhotosSection({
   children,
   ...props
 }: React.ComponentPropsWithoutRef<typeof Section>) {
   return (
     <Section {...props}>
-      <div className="space-y-16">{children}</div>
+       <ul
+      role="list"
+      className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+    >{children}</ul>
     </Section>
   )
 }
 
-function Appearance({
-  title,
-  description,
-  event,
-  cta,
-  href,
-}: {
-  title: string
-  description: string
-  event: string
-  cta: string
-  href: string
-}) {
+function PhotoGrid({}: React.ComponentPropsWithoutRef<'div'>) {
   return (
-    <Card as="article">
-      <Card.Title as="h3" href={href}>
-        {title}
-      </Card.Title>
-      <Card.Eyebrow decorate>{event}</Card.Eyebrow>
-      <Card.Description>{description}</Card.Description>
-      <Card.Cta>{cta}</Card.Cta>
-    </Card>
+    <>
+      {files.map((file) => (
+        <li key={file.title} className="relative">
+          <div className="aspect-h-7 aspect-w-10 group block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:bg-gray-300 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+            <img
+              src={file.source.src}
+              alt={file.title}
+              className="pointer-events-none object-cover group-hover:opacity-75"
+            />
+            <button
+              type="button"
+              className="absolute inset-0 focus:outline-none"
+            >
+              <span className="sr-only">View details for {file.title}</span>
+            </button>
+          </div>
+          <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">
+            {file.title}
+          </p>
+          {/* <p className="pointer-events-none block text-sm font-medium text-gray-500">
+            {file.size}
+          </p> */}
+        </li>
+      ))}
+        </>
   )
+
 }
 
 export const metadata: Metadata = {
   title: 'Photos',
-  description:
-    'Some pictures I have taken over the years.',
+  description: 'Some pictures I have taken over the years.',
 }
 
-export default function Speaking() {
+export default function Photos() {
   return (
     <SimpleLayout
       title="Sometimes I moonlight as a (amateur) photographer."
-      intro="I recently picked up photography as a hobby and have been enjoying it a lot. Here are some of my favorite shots."
+      intro="I recently picked up photography as a hobby and have been enjoying it a lot. Here are some of my favorite shots. Feel free to checkout Unsplash for high quality free downloads or contact me if you would like to use any of these photos."
     >
-      <div className="space-y-20">
-        <SpeakingSection title="Conferences">
-          <Appearance
-            href="#"
-            title="In space, no one can watch you stream — until now"
-            description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
-            event="SysConf 2021"
-            cta="Watch video"
-          />
-          <Appearance
-            href="#"
-            title="Lessons learned from our first product recall"
-            description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
-            event="Business of Startups 2020"
-            cta="Watch video"
-          />
-        </SpeakingSection>
-        <SpeakingSection title="Podcasts">
-          <Appearance
-            href="#"
-            title="Using design as a competitive advantage"
-            description="How we used world-class visual design to attract a great team, win over customers, and get more press for Planetaria."
-            event="Encoding Design, July 2022"
-            cta="Listen to podcast"
-          />
-          <Appearance
-            href="#"
-            title="Bootstrapping an aerospace company to $17M ARR"
-            description="The story of how we built one of the most promising space startups in the world without taking any capital from investors."
-            event="The Escape Velocity Show, March 2022"
-            cta="Listen to podcast"
-          />
-          <Appearance
-            href="#"
-            title="Programming your company operating system"
-            description="On the importance of creating systems and processes for running your business so that everyone on the team knows how to make the right decision no matter the situation."
-            event="How They Work Radio, September 2021"
-            cta="Listen to podcast"
-          />
-        </SpeakingSection>
-      </div>
+      <PhotosSection title="Photos">
+        <PhotoGrid />
+      </PhotosSection>
     </SimpleLayout>
   )
 }

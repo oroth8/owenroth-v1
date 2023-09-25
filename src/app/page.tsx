@@ -11,11 +11,11 @@ import {
   LinkedInIcon,
   UnsplashIcon,
 } from '@/components/SocialIcons'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image1 from '@/images/photos/tokoyo.jpg'
+import image2 from '@/images/photos/hakone.jpg'
+import image3 from '@/images/photos/kyoto-1.jpg'
+import image4 from '@/images/photos/kyoto-2.jpg'
+import image5 from '@/images/photos/zion-1.jpg'
 import lplLogo from '@/images/logos/lpl.jpeg'
 import wfLogo from '@/images/logos/workforce.jpeg'
 import navyLogo from '@/images/logos/navy.png'
@@ -326,7 +326,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>

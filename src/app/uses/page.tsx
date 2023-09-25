@@ -43,10 +43,13 @@ export default function Uses() {
   return (
     <SimpleLayout
       title="Software I use, gadgets I love, and other things I recommend."
-      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+      intro="I get asked a lot about the things I use to build software, stay productive, or use to shoot photographs. Here’s a big list of all of my favorite stuff."
     >
       <div className="space-y-20">
-        <ToolsSection title="Workstation">
+        <ToolsSection title="Coming Soon!">
+          <Tool title="Coming Soon!">Coming Soon!</Tool>
+        </ToolsSection>
+        {/* <ToolsSection title="Workstation">
           <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
             I was using an Intel-based 16” MacBook Pro prior to this and the
             difference is night and day. I’ve never heard the fans turn on a
@@ -116,7 +119,7 @@ export default function Uses() {
             Simple tool for blocking distracting websites when I need to just do
             the work and get some momentum going.
           </Tool>
-        </ToolsSection>
+        </ToolsSection> */}
       </div>
     </SimpleLayout>
   )
