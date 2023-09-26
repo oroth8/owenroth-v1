@@ -13,7 +13,7 @@ const projects = [
   {
     name: 'EasyHubspot Gem',
     description:
-      'A gem I built from the ground up that provides an easier way to integrate with the Hubspot API',
+      'Developed a gem to facilitate seamless integration with the Hubspot API, enhancing user experience.',
     link: {
       href: 'https://github.com/oroth8/easy_hubspot',
       label: 'github.com/oroth8/easy_hubspot',
@@ -23,7 +23,7 @@ const projects = [
   {
     name: 'Magellan Rewards Web/Android/iOS App',
     description:
-      'Another project I build from the ground up that provides a rewards and admin interface for the Magellan Rewards program.',
+      'Engineered a comprehensive application offering both rewards and administrative interfaces for the Magellan Rewards program.',
     link: {
       href: 'https://www.magellan-rewards.com/',
       label: 'magellan-rewards.com',
@@ -33,7 +33,7 @@ const projects = [
   {
     name: 'BellaBaby Photography',
     description:
-      'A massive project I helped contributed significantly too that provides a platform for BellaBaby photographers to upload and manage their photos. Process 100k photos a day.',
+      'Played a pivotal role in the development of a large-scale platform enabling BellaBaby photographers to manage their content. Successfully processes over 100k photos daily.',
     link: {
       href: 'https://www.bellababyphotography.com/',
       label: 'bellababyphotography.com',
@@ -43,14 +43,14 @@ const projects = [
   {
     name: 'Workforce.com',
     description:
-      'A SaaS product I helped contributed to that provides a platform for companies to manage their workforce.',
+      'Contributed significantly to a SaaS product designed to empower companies with workforce management solutions.',
     link: { href: 'https://workforce.com/', label: 'workforce.com' },
     logo: logoWf,
   },
   {
     name: 'My Wedding Website',
     description:
-      'A website I built that integrates with a custom API I also built to manage RSVPs and other wedding related things.',
+      'Conceptualized and created a wedding-centric website with a custom-built API integration to manage RSVPs and other event-related functionalities.',
     link: {
       href: 'https://www.sabrina-owen-wedding.com/',
       label: 'sabrina-owen-wedding.com',
