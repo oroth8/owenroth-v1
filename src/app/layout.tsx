@@ -1,9 +1,12 @@
 import { type Metadata } from 'next'
 
+import { Suspense } from 'react'
+
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
+import Analytics from '@/components/Analytics'
 
 export const metadata: Metadata = {
   title: {
@@ -28,6 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
+        <Suspense>
+          <Analytics />
+        </Suspense>
         <Providers>
           <div className="flex w-full">
             <Layout>{children}</Layout>
