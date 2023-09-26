@@ -38,6 +38,12 @@ export const metadata: Metadata = {
   title: 'Articles',
   description:
     'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.',
+  alternates: {
+    canonical: '/articles',
+    languages: {
+      'en-US': '/articles',
+    },
+  },
 }
 
 export default async function ArticlesIndex() {

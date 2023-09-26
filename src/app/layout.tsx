@@ -14,12 +14,52 @@ export const metadata: Metadata = {
     default:
       'Owen Roth -  Software Developer, Fitness Enthusiast, and Navy Veteran.',
   },
-  description:
-    'I’m Owen, a software developer based in Chicago, IL. I specialize in building full stack web applications with Ruby and Javascript frameworks. Outside of tech, I frequently train for marathons, strength train, ski, travel, and take pictures.',
+  metadataBase: new URL('https://owen-roth.com'),
   alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/',
+    },
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
+  },
+  description:
+    "Owen Roth's personal portfolio containing bio, resume, projects, photos, articles, and products/technology he uses.",
+  openGraph: {
+    images: ['/static/meta-tag-owen-roth.jpg'],
+    locale: 'en_US',
+    type: 'website',
+    siteName: 'owen-roth.com',
+    title: {
+      template: '%s - Owen Roth',
+      default:
+        'Owen Roth -  Software Developer, Fitness Enthusiast, and Navy Veteran.',
+    },
+  },
+  keywords: [
+    'owen',
+    'roth',
+    'owenroth',
+    'developer',
+    'software developer',
+    'software engineer',
+    'portfolio',
+    'chicago developer',
+    'website developer',
+    'application developer',
+    'SEO consultant',
+    'CRM consultant',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  verification: {
+    google: `${process.env.GOOGLE_SITE_VERIFICATION}`,
+  },
+  icons: {
+    icon: '@/images/portrait.jpg',
   },
 }
 
@@ -29,7 +69,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+    <html
+      lang="en"
+      className="h-full antialiased"
+      suppressHydrationWarning
+    >
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Suspense>
           <Analytics />

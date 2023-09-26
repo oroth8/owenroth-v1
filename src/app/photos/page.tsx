@@ -118,6 +118,12 @@ function PhotoGrid({}: React.ComponentPropsWithoutRef<'div'>) {
 export const metadata: Metadata = {
   title: 'Photos',
   description: 'Some pictures I have taken over the years.',
+  alternates: {
+    canonical: '/photos',
+    languages: {
+      'en-US': '/photos',
+    },
+  },
 }
 
 export default function Photos() {

@@ -5,6 +5,16 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 export const metadata: Metadata = {
   title: 'You’re subscribed',
   description: 'Thanks for subscribing to my newsletter.',
+  alternates: {
+    canonical: '/thank-you',
+    languages: {
+      'en-US': '/thank-you',
+    },
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 }
 
 export default function ThankYou() {

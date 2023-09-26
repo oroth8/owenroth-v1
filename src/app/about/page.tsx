@@ -52,6 +52,12 @@ export const metadata: Metadata = {
   title: 'About',
   description:
     'I’m Owen Roth. Happily dedicated to all things tech and an active lifestyle.',
+  alternates: {
+    canonical: '/about',
+    languages: {
+      'en-US': '/about',
+    },
+  },
 }
 
 export default function About() {

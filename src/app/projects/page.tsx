@@ -74,6 +74,12 @@ export const metadata: Metadata = {
   title: 'Projects',
   description:
     'I’ve worked on tons of projects over the years but these are the ones that I’m most proud of. I have worked on things ranging from small API gems to massive SaaS applications. These are the ones that I have spent the most time on and have had the most impact on my career.',
+  alternates: {
+    canonical: '/projects',
+    languages: {
+      'en-US': '/projects',
+    },
+  },
 }
 
 export default function Projects() {

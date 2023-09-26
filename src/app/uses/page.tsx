@@ -37,6 +37,15 @@ function Tool({
 export const metadata = {
   title: 'Uses',
   description: 'Software I use, gadgets I love, and other things I recommend.',
+  alternates: {
+    canonical: '/uses',
+    languages: {
+      'en-US': '/uses',
+    },
+  },
+  openGraph: {
+    title: "Uses"
+  }
 }
 
 export default function Uses() {
